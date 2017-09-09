@@ -10,7 +10,8 @@ public class Main {
         System.out.println("Введите логин");
         String test1, test2;
         test1 = me.nextLine();
-        test2 = "gmail.com";
+        System.out.println("Введите Ваш домен почты без @");
+        test2 = me.nextLine();
         System.out.println("Ваш адрес будет:"+ test1 + "@" + test2);
     }
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f708e21a-5034-4d12-bbac-1ae24259e700" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andreyhome/Main.java" afterPath="$PROJECT_DIR$/src/com/andreyhome/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Traincode/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Traincode/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f708e21a-5034-4d12-bbac-1ae24259e700" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,7 +90,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Traincode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
