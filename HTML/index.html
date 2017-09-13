@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Home Page</title>
+	
+	<link rel="stylesheet" href="mystyle.css">
+		
+</head>
+<body>
+	
+	<!--Начало-->
+	<script type="text/javascript" src="myscript.js" charset="UTF-8"></script> <!--путь к файлу javscript-->
+	
+		<form name="myform">	
+		
+	<p class="mystyle1"> Язык Java был разработан компанией Sun Microsystems, создателем которого был Джеймс Гослинг.</p>
+	<br>
+	<p class="mystyle1"> В каком году язык Java был выпущен ? </p>
+		
+		<p class="mystyle1"> <input type="radio" name="mybutton" value ="1"> 1995 </p>
+		<p class="mystyle1"> <input type="radio" name="mybutton" value ="2"> 1996 </p> 
+		<p class="mystyle1"> <input type="radio" name="mybutton" value ="3"> 1997 </p> 
+		<p class="mystyle1"> <input type="radio" name="mybutton" value ="4"> 1998 </p>
+	<br>
+		 <button type="button" onclick="getRadioValue();">Confirm answer</button> <!--Вызываем функцию getRadioValue которая находится в myscript и передадим туда значение radio button value-->
+        </form>
+	<!--Конец-->		
+			
+</body>
+</html>
