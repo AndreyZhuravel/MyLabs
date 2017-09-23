@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8fd61e1-4307-4e39-89f4-f92cfaeb9f7a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab143/out/production/Lab143/com/andreyhome/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab145/out/production/Lab145/com/andreyhome/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Traincode/out/production/Traincode/com/andreyhome/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Traincode/src/com/andreyhome/Test.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab121/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab121/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab122/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab122/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab141/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab141/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab143/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab143/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab145/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab145/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab145/src/com/andreyhome/Main.java" afterPath="$PROJECT_DIR$/../Lab145/src/com/andreyhome/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Traincode/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Traincode/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab141/src/com/andreyhome/Main.java" afterPath="$PROJECT_DIR$/../Lab141/src/com/andreyhome/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +68,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -101,7 +93,11 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,7 +164,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="703" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -206,6 +201,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/andreyhome/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andreyhome/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
