@@ -1,113 +1,159 @@
 package com.andreyhome;
 
-
-/*
-В процессе решения
-*/
-
-
 /*
 Create a Matrix class that contains the methods of addition and multiplication of matrices (work with two-dimensional arrays);
  */
 
-import java.util.Scanner;
 
-class Matrix {
+class Matrix{
+    private int _x;
+    private int _y;
+    private int[][] _array;
 
-        private int a=2;
-        private int b=2;
-        private int i=0;
-        private int j=0;
-        private String matrix1;
-        int arr1[][] = new int[2][2];
-        int arr2[][] = new int[2][2];
-        int arr3[][] = new int[2][2];
+    public Matrix(int x, int y)
 
-        public void additionMatrix() {
-
-            System.out.println("Новая матрица:");
-
-            for(i=0;i<2;++i)
-                for(j=0;j<2;++j)
-                    arr3[i][j]=arr1[i][j]+arr2[i][j];///<<-------Логика сложения элементов матрицы 1 и матрицы 2
-
-            System.out.println("1-ая матрица:");
-            for(i=0;i<b;++i)
-            {
-                for(j=0;j<a;++j)
-                    System.out.print(arr1[i][j]+" ");///<<-------
-                System.out.println("");
-            }
-
-            System.out.println("2-ая матрица:");
-            for(i=0;i<b;++i)
-            {
-                for(j=0;j<a;++j)
-                    System.out.print(arr2[i][j]+" ");///<<-------
-                System.out.println("");
-            }
-
-            System.out.println("3-ая матрица:");
-            for(i=0;i<b;++i)
-            {
-                for(j=0;j<a;++j)
-                    System.out.print(arr3[i][j]+" ");///<<-------
-                System.out.println("");
-            }
-
-            this.matrix1 = matrix1;
-        }
-
+    {
+        _array = new int[x][y];
     }
-class CreateMatrixInstance {
 
-    public static void main(String[] args) {
+    public Matrix(int x, int y, int[][] array)
+    {
+        _array = new int[x][y];
 
-        int i = 0;
-        int j = 0;
-
-//      Matrix arr1[][];
-//      Matrix arr2[][];
-//      Matrix arr3[][];
-        int arr1[][] = new int[2][2];
-        int arr2[][] = new int[2][2];
-        int arr3[][] = new int[2][2];
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Внесите элементы массива построчно для 1-ой матрицы");
-        for (i = 0; i < 2; ++i)
-            for (j = 0; j < 2; ++j)
-                arr1[i][j] = sc.nextInt();
-
-        System.out.println("Внесите элементы массива построчно для 2-ой матрицы");
-        for (i = 0; i < 2; ++i)
-            for (j = 0; j < 2; ++j)
-                arr2[i][j] = sc.nextInt();
-
-        System.out.println("Новая матрица:");
-
-        for(i=0;i<2;++i)
-            for(j=0;j<2;++j)
-                arr3[i][j]=arr1[i][j]+arr2[i][j];///<<-------Логика сложения элементов матрицы 1 и матрицы 2
-
-        for(i=0;i<2;++i)
+        for(int i=0; i < x; i++)
         {
-            for(j=0;j<2;++j)
-                System.out.print(arr3[i][j]+" ");///<<-------
-            System.out.println("");
+            for(int j=0; j < y; j++)
+            {
+                _array[i][j] = array[i][j];
+            }
         }
+    }
 
+    public int[][] GetArray()
+    {
+        return _array;
+    }
+
+    public void SetArray(int[][] array)
+    {
+        _array = array;
     }
 }
 
-//    int arr1[][]=new int[a][b],arr2[][]=new int[c][d],arr3[][]=new int[e][f];
+class Creator
+{
+
+    public Matrix GetNewMatrix(int x, int y)
+    {
+        return new Matrix(x, y);
+    }
+
+    public Matrix GetNewMatrix(int x, int y, int[][] array)
+    {
+        return new Matrix(x, y, array);
+    }
+
+    public void PrintMatrix(Matrix matrix)
+    {
+        int[][] mas  = matrix.GetArray();
+        for(int i=0; i < mas[0].length; i++)
+        {
+            for(int j=0; j < mas[1].length; j++)
+            {
+                System.out.print(mas[i][j]+" ");
+            }
+        }
+        System.out.println("\n--------------------");
+    }
+
+    public Matrix SumOfMatrix(Matrix matrixA, Matrix matrixB)
+    {
+        int[][] masA  = matrixA.GetArray();
+        int[][] masB  = matrixB.GetArray();
+
+        int xmasA = masA[0].length;
+        int ymasA = masA[1].length;
+
+        int xmasB = masB[0].length;
+        int ymasB = masB[1].length;
+
+        if (xmasA != xmasB || ymasA != ymasB)
+        {
+            System.out.print("Soft can't plus diferent dimension");
+            return null;
+        }
 
 
+        int[][] newArray = new int[xmasA][ymasA];
+
+        for(int i=0; i < masA[0].length; i++)
+        {
+            for(int j=0; j < masA[1].length; j++)
+            {
+                newArray[i][j] = masA[i][j] + masB[i][j];
+            }
+        }
+
+        Matrix result = this.GetNewMatrix(xmasA, ymasA);
+        result.SetArray(newArray);
+
+        return result;
+    }
+
+    public Matrix MultiOfMatrix(Matrix matrixA, Matrix matrixB)
+    {
+        int[][] masA  = matrixA.GetArray();
+        int[][] masB  = matrixB.GetArray();
+
+        int xmasA = masA[0].length;
+        int ymasA = masA[1].length;
+
+        int xmasB = masB[0].length;
+        int ymasB = masB[1].length;
+
+        if (xmasA != xmasB || ymasA != ymasB)
+        {
+            System.out.print("Soft can't plus diferent dimension");
+            return null;
+        }
+
+
+        int[][] newArray = new int[xmasA][ymasA];
+
+        for(int i=0; i < masA[0].length; i++)
+        {
+            for(int j=0; j < masA[1].length; j++)
+            {
+                newArray[i][j] = masA[i][j] * masB[i][j];
+            }
+        }
+
+        Matrix result = this.GetNewMatrix(xmasA, ymasA);
+        result.SetArray(newArray);
+
+        return result;
+    }
+}
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        Creator _ctor = new Creator();
+
+        Matrix myFirstMatrix = _ctor.GetNewMatrix(2,2,new int[][]{{1,2},{3,4}});
+        Matrix mySecondMatrix = _ctor.GetNewMatrix(2,2,new int[][]{{1,2},{3,4}});
+
+        _ctor.PrintMatrix(myFirstMatrix);
+        _ctor.PrintMatrix(mySecondMatrix);
+
+        System.out.println("Sum matrix:");
+        Matrix myThirdMatrix = _ctor.SumOfMatrix(myFirstMatrix, mySecondMatrix);
+        _ctor.PrintMatrix(myThirdMatrix);
+
+        System.out.println("Multiply matrix:");
+        Matrix myFourthMatrix = _ctor.MultiOfMatrix(myFirstMatrix, mySecondMatrix);
+        _ctor.PrintMatrix(myFourthMatrix);
+
     }
 }

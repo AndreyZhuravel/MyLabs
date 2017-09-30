@@ -39,7 +39,9 @@ class Employee {
     // Просуммировать введенные пользователем данные нужно в классе Employee
 
     public void calcSalary(double[] arr1) { // Сюда передается заполненный массив arr1 из класса Accountant
+
         double sum=0; // Объявляем новый параметр sum с типом double так как salary - тоже double
+
         for (int i = 0; i < arr1.length; i++) { // Проходим по массиву...
             sum=sum+arr1[i];} // ..суммируя его элементы
             System.out.println(sum); // Выводим сумму значений элементов массива
@@ -71,8 +73,8 @@ class Accountant {
 
         // Если нужно вывести на печать элементы массива = т.е. зарплату
         // System.out.print(": ");
-        //for (int i = 0; i < size; i++) {
-        //    System.out.print(" " + arr1[i]); // Вывод на экран
+        // for (int i = 0; i < size; i++) {
+        // System.out.print(" " + arr1[i]); // Вывод на экран
         //}
 
         abc.setName(name); // Вызовем метод setName в классе Employee для созданного сотрудника и запишем туда имя сотрудника на основе ввода пользователя
